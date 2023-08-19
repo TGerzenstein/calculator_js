@@ -13,7 +13,7 @@ body {
 }
 
 .calculator {
-    background-color: lightslategray;
+    background-color: rgb(97, 129, 161);
     color: azure;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -27,4 +27,38 @@ body {
 
 .screen {
     grid-column: 1 / 5;
+    padding: 1rem;
+    font-size: 1.80rem;
+    text-align: right;
+    margin-bottom: 0.80rem;
+    font-weight: 500;
+    background-color: lightslategray;
+}
+
+.btn {
+    background-color: rgb(97, 129, 161);
+    color: azure;
+    border: 0;
+    padding: 1rem .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: lightslategray;
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+#equal {
+    grid-row: span 2;
+    background-color: rgb(236, 83, 83);
+}
+
+#equal:hover {
+   background-color: rgb(240, 114, 114);
 }
